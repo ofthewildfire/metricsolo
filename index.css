@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #353535 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Font imports */ 
+
+@font-face {
+    font-family: 'Inter 400';
+    src: url(static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inter 500';
+    src: url(static/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Inter 600';
+    src: url(static/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter 800';
+    src: url(static/Inter-ExtraBold.ttf);
+}
+
+
+@font-face {
+    font-family: 'Signiture';
+    src: url(static/Allura-Regular.ttf);
+}
+
+/* Box styles */ 
+
+.main-container {
+    background: #F4F4F4;    
+    height: 729px;
+    width: 550px;
+}
+
+.number-box {
+    height: 285px;
+    width: 550px;
+    background-color: #6943FF;
+}
+
+#input-box {
+background: transparent;
+margin: 30px auto 50px;
+height: 83px;
+width: 117px;
+border-radius: 5px;
+border: 1px solid white;
+font-family: 'Inter 800';
+font-size: 58px;
+color: white;
+text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}   
+    
+#convert-btn {
+display: block;
+margin: -30px auto;
+width: 117px;
+height: 42px;
+border: none;
+color: #3D3D3D;
+font-family: 'Inter 500';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+background: #FFFFFF;
+border-radius: 5px;
+}
+
+#convert-btn:active {
+cursor: pointer;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, .9);
+}
+
+/* oh neat for the above. Had to mc-Google it though */ 
+
+.box-conversion {
+margin: 20px auto;
+border: 1px solid grey;
+background: white;
+height: 108.57313537597656px;
+width: 500px;
+border-radius: 5px;
+box-shadow: 0px 0px 8px;
+}
+
+
+/* Text styles */ 
+
+h1 {
+font-family: 'Inter 800';
+color: white;
+margin: 0px;
+padding-top: 20px;
+width: 100%;
+margin: 0 auto;
+}
+
+
+/* styles for text which will be rendered in JS */ 
+
+h2 {
+margin-top: 35px;
+text-align: center;
+font-family: 'Inter 600';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 20px;
+text-align: center;
+color: #5A537B;
+}
+
+p {
+margin-top: 0px;
+text-align: center;
+font-family: 'Inter 400';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #353535;
+}
+
+span {
+    font-family: 'Signiture';
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.5rem;
+    background: #111314;
+    background: linear-gradient(to right, #111314 38%, #59437A 50%, #CD74ED 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
